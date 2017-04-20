@@ -28,7 +28,7 @@ public class CallMap extends AppCompatActivity {
             String longti = longtutude.getText().toString().trim();
             String mlabell = labell.getText().toString().trim();
 
-            Uri location = Uri.parse("http://maps.google.com/maps?z=10&q=loc:13.759764,100.541532(ศูยน์รางน้ำ)");//link googlemap
+            Uri location = Uri.parse("http://maps.google.com/maps?z=10&q=loc:"+lat+","+longti+"("+mlabell+")");//link googlemap
             Intent mapIntent = new Intent(Intent.ACTION_VIEW,location);
             //mapIntent.setPackage("com.google.andriod.app.maps");//ใช้งานกับโทรศัพท์มือถืือ(ใช้งานกับgooglemap โดยตรง)
             startActivity(mapIntent);
